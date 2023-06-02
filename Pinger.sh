@@ -42,10 +42,9 @@ while true; do
         break
     fi
     
-    if [[ $mscount > 25 ]]; then
+    if (( $mscount > 25 )); then
         break
     fi
-
     # Move the cursor up two lines
     echo -ne "\033[2A"
 done
